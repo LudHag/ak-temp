@@ -43,11 +43,11 @@ h1 {
 }
 
 .left-side{
-    width: 50%;
+    width: 75%;
 }
 
 .right-side{
-    max-width: 40%;
+    max-width: 25%;
     padding: 40px;
     img{
         width: 100%
@@ -65,7 +65,9 @@ a, a:hover, a:visited{
     }
 }
 
-
+footer{
+    width: 100%;
+}
 @media (max-width: 768px){
     .right-side{
         display: none;
