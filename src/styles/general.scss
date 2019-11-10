@@ -1,0 +1,72 @@
+@import "~normalize.css/normalize.css";
+
+body{
+    background: #000;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #dddddd;
+    font-size: 15px;
+}
+
+header{
+    display: block;
+    position: relative;
+    padding: 0 45px;
+    border-bottom: 2px solid #1a1a1a;
+    padding: 15px 0 0;
+    background: #b10000;
+}
+
+.body-content{
+    background: #000;
+    color: #fff;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 750px;
+
+}
+
+h1 {
+    color: #b10000;
+    font-size: 36px;
+}
+.body-content{
+    display: flex;
+}
+
+.left-side{
+    width: 50%;
+}
+
+.right-side{
+    max-width: 40%;
+    padding: 40px;
+    img{
+        width: 100%
+    }
+}
+
+a, a:hover, a:visited{
+    color: #b10000;
+    text-decoration: none;
+}
+.biljettinfo{
+    display: none;
+    &.open{
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px){
+    .right-side{
+        display: none;
+    }
+    .left-side{
+        width: 100%;
+    }
+}
